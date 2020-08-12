@@ -8,10 +8,23 @@ import { routes } from './app.routing';
 import { AuthLayoutComponent } from './shared/layouts/auth-layout/auth-layout.component';
 import { SiteLayoutComponent } from './shared/layouts/site-layout/site-layout.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, LoginPageComponent, AuthLayoutComponent, SiteLayoutComponent, RegisterPageComponent],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  declarations: [
+    AppComponent,
+    LoginPageComponent,
+    AuthLayoutComponent,
+    SiteLayoutComponent,
+    RegisterPageComponent,
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
