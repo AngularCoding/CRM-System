@@ -16,6 +16,8 @@ import { AnalyticsPageComponent } from './analytics-page/analytics-page.componen
 import { HistoryPageComponent } from './history-page/history-page.component';
 import { OrderPageComponent } from './order-page/order-page.component';
 import { CategoriesPageComponent } from './categories-page/categories-page.component';
+import { CategoriesService } from './shared/services/categories.service';
+import { LoaderComponent } from './shared/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { CategoriesPageComponent } from './categories-page/categories-page.compo
     HistoryPageComponent,
     OrderPageComponent,
     CategoriesPageComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
