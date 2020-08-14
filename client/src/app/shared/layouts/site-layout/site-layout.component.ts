@@ -38,7 +38,7 @@ export class SiteLayoutComponent implements AfterViewInit {
       name: 'Add order',
     },
     {
-      url: '/category',
+      url: '/categories',
       name: 'Assortment',
     },
   ];
